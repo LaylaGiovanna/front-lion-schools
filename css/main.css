@@ -1,0 +1,32 @@
+.container-left{
+    background-color: plum;
+    display: grid;
+    justify-content: center;
+    width: 60%;
+    
+}
+
+.login-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* width: 28.125rem; */
+  gap: 3.125rem;
+  flex-wrap: wrap;
+
+}
+
+.title-login {
+  background-color: tomato;
+
+}
+
+.title-login h1{
+    font-weight: 300;
+}
+
+
+.title-login span{
+    color: var(--headerFoter);
+    font-weight: 800;
+}

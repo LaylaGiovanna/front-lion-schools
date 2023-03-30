@@ -1,6 +1,7 @@
 :root{
     --backgorundColor :  #D9D9D9;
      --headerFoter:#3347b0;
+     --shadow:#292929;
 }
 *,*::after,*::before{
     margin: 0;
@@ -9,30 +10,8 @@
 
 }
 body{
+    
     font-size: 18px;
     background-color: var(--backgorundColor);
     font-family: 'Roboto', sans-serif;
-}
-.heather_content{
-    width: 100vw;
-    height: 10.6vh;
-    background-color: var(--headerFoter);
-    color: var(--backgorundColor);
-    font-weight: 700;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-   
-}
-
-.footer_content{
-    width: 100vw;
-    height: 10.6vh;
-    background-color: var(--headerFoter);
-    color: var(--backgorundColor);
-    font-weight: 400;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-   
 }

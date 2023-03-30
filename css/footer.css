@@ -1,0 +1,28 @@
+/* ///////////////////////////////////////////////// */
+
+.footer_content{
+    width: 100vw;
+    height: 10.6vh;
+    background-color: var(--headerFoter);
+    color: var(--backgorundColor);
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vw;
+    font-size: 1.3rem;
+}
+
+.footer_content_left{
+    font-size: 16px;
+    width: 33%;
+}
+
+.footer_content_center{
+    font-size: 16px;
+    width: 33%;
+}
+.footer_content_rigth{
+    font-size: 16px;
+    width: 33%;
+}

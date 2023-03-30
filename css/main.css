@@ -1,32 +1,36 @@
-.container-left{
-    background-color: plum;
-    display: grid;
-    justify-content: center;
-    width: 60%;
-    
+.container-left {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  padding: 60px 60px;
+  height: 78.8vh;
 }
 
 .login-content {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  /* width: 28.125rem; */
   gap: 3.125rem;
   flex-wrap: wrap;
 
 }
 
+.devices{
+  display: grid;
+  gap: 80px;
+}
+
 .title-login {
-  background-color: tomato;
-
+  font-size: 28px;
+  height: 6.25rem;
+  display: flex;
+  justify-content: center;
 }
 
-.title-login h1{
-    font-weight: 300;
+.title-login h1 {
+  font-weight: 300;
 }
 
-
-.title-login span{
-    color: var(--headerFoter);
-    font-weight: 800;
+.title-login span {
+  color: var(--headerFoter);
+  font-weight: 800;
 }
+

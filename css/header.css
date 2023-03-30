@@ -1,0 +1,45 @@
+/* ///////////////////////////////////////////////// */
+.heather_content{
+    width: 100vw;
+    height: 10.6vh;
+    background-color: var(--headerFoter);
+    color: var(--backgorundColor);
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vw;
+    font-size: 1.3rem;
+}
+
+.heather_content img{
+    width: 10vh;
+}
+
+#left_header{
+    display: flex;
+    align-items: center;
+    
+}
+#rigth_header{
+    width: 6vw;
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5vw;
+}
+#button_header{
+   border:0;
+   background-color: transparent;
+   background-repeat: no-repeat;
+   width: 6vh;
+   height: 6vh;
+   cursor: pointer;
+   background-image: url(../img/log_out_icon.svg);
+
+    
+}
+#button_header:hover{
+    background-image: url(../img/logoutOnCLick.svg);
+ }

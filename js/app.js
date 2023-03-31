@@ -72,7 +72,11 @@ const createFooter = function(){
     contentFooterLeft.textContent = phoneNumber + email + place
     contentFooterLeft.className = "footer_content_left"
     footer_content.appendChild(contentFooterLeft) 
-
+    /* div for contacts */
+    /* let listContacts = document.createElement("div");
+    listContacts.className = "list"
+    listContacts.appendChild(contentFooterLeft) 
+ */
     //the center
     let contentFooterCenter = document.createElement("div");
     contentFooterCenter.textContent = "Copyright © 2022 | Layla Giovanna | A. Beatriz Landi"

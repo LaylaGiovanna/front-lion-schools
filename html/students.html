@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Links -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="../img/icon-lion.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/students.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+
+    <!-- Scripts -->
+    <script src="../js/app.js" defer></script>
+    <script src="../js/students.js"></script>
+
+    <title>Lion Schools - Turma</title>
+  </head>
+
+  <body>
+    <div class="content" id="content"></div>
+
+    <header id="header"></header>
+
+    <div class="menu">
+      <div class="menu-left">
+        <!-- menu status -->
+        <div class="menu-header">
+          <select id="select__status">
+            <option value="status">Status</option>
+          </select>
+          <script>
+            let list__status = ["Cursando", "Finalizado"];
+
+            list__status.forEach(function (item) {
+              let list = document.createElement("option");
+              list.text = item;
+              list.value = item;
+              select__status.appendChild(list);
+            });
+          </script>
+        </div>
+        <!-- menu year -->
+        <div class="menu-year">
+          <select id="select__year">
+            <option value="year">Ano</option>
+          </select>
+          <script>
+            let list__year = [
+              "2018",
+              "2019",
+              "2020",
+              "2021",
+              "2022",
+              "2023",
+              "2024",
+            ];
+
+            list__year.forEach(function (item) {
+              let list = document.createElement("option");
+              list.text = item;
+              list.value = item;
+              select__year.appendChild(list);
+            });
+          </script>
+        </div>
+      </div>
+
+      <div class="menu-right">
+        <div class="subtitle__menu">
+          <p>Legenda</p>
+        </div>
+
+        <div class="div__cursando">
+        <div class="square__yellow"></div>
+            <p>Cursando</p>
+        </div>
+
+        <div class="div__finalizado">
+        <div class="square__blue"></div>
+            <p>Finalizado</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- <footer id="footer"></footer> -->
+  </body>
+</html>

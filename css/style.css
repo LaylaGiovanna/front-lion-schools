@@ -2,6 +2,8 @@
     --backgorundColor :  #D9D9D9;
      --headerFoter:#3347b0;
      --shadow:#292929;
+     --menuHeader:#BCC2E5;
+     --menuHeaderSubtitle:#E5B657;
 }
 *,*::after,*::before{
     margin: 0;

@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="../css/students.css" />
     <link rel="stylesheet" href="../css/header.css" />
     <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/menu-students.css">
 
     <!-- Scripts -->
     <script src="../js/app.js" defer></script>
@@ -32,7 +33,7 @@
       <div class="menu-left">
         <!-- menu status -->
         <div class="menu-header">
-          <select id="select__status">
+          <select id="select__status" class="select__status">
             <option value="status">Status</option>
           </select>
           <script>
@@ -45,6 +46,8 @@
               select__status.appendChild(list);
             });
           </script>
+
+          
         </div>
         <!-- menu year -->
         <div class="menu-year">
@@ -78,16 +81,36 @@
         </div>
 
         <div class="div__cursando">
-        <div class="square__yellow"></div>
-            <p>Cursando</p>
+          <div class="square__yellow"></div>
+          <p>Cursando</p>
         </div>
 
         <div class="div__finalizado">
-        <div class="square__blue"></div>
-            <p>Finalizado</p>
+          <div class="square__blue"></div>
+          <p>Finalizado</p>
         </div>
       </div>
     </div>
+
+    <main>
+      <div class="title-course">
+        <h1>Desenvolvimento de sistemas</h1>
+      </div>
+
+      <div class="container" id="container">
+        <div class="card" id="card">
+          <div class="img__profile">
+            <img src="../img/aluno.png" alt="">
+          </div>
+          <div class="name__profile">
+            <p>HÉLIDA BENTO DE OLIVEIRA LINSsssssssssssssssssssssssssssssssss</p>
+          </div>
+        </div>
+      </div>
+
+
+    </main>
+    
 
     <!-- <footer id="footer"></footer> -->
   </body>

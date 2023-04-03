@@ -1,87 +1,53 @@
-.menu {
-  display: flex;
-  height: 50px;
-  background-color: var(--menuHeader);
-  padding-left: 1.3rem;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.menu-left {
-  display: flex;
-  height: 50px;
+main {
+  display: grid;
   justify-content: center;
-  align-items: center;
-  width: auto;
-  flex-direction: row;
 }
 
-/* menu - STATUS */
-
-select {
+.title-course {
   display: flex;
-  font-size: 16px;
   align-items: center;
-  background-color: unset;
-  color: var(--headerFoter);
-  border: none;
-  outline: none;
-  overflow: hidden;
-  appearance: none;
-  padding: 0 1rem 1rem 1rem;
-}
-
-option {
-  background-color: var(--headerFoter);
-  color: var(--backgorundColor);
-}
-
-/* menu - YEAR */
-.menu-year {
-  display: flex;
-  height: 30px;
-  background-color: var(--menuHeader);
   justify-content: center;
-  align-items: center;
+  padding: 35px;
+}
+.title-course h1 {
+  font-size: 60px;
+  color: var(--headerFoter);
 }
 
-/* menu RIGHT */
-.menu-right {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  color: var(--headerFoter);
-  font-size: 16px;
-  width: 20%;
+.container {
+  display: grid;
+  width: 81.25rem;
+  background-color: aqua;
+  justify-content: center;
+  padding: 30px;
+}
+
+#card {
+  height: 18.75rem;
+  max-width: 200px;
+  top: 0;
+  border-radius: 5px;
+  background-color: tomato;
+}
+
+
+.card{
+  display: grid;
+  text-align: center;
+
+}
+.img__profile  {
+  background-color: hotpink;
+}
+.img__profile img {
+  background-color: hotpink;
+  height: 200px;
+  width: 200px;
+}
+
+
+.name__profile p {
+  max-width: 200px;
   
 }
-.subtitle__menu {
-  width: 28%;
-  display: flex;
-  justify-content: end;
-}
-.div__cursando{
-    display: flex;
-    gap: 10px;
-}
 
-.square__yellow {
-  display: block;
-  width: 20px;
-  height: 20px;
-  background-color: var(--menuHeaderSubtitle);
-}
-
-.subtitle__menu {
-  text-transform: uppercase;
-}
-.div__finalizado{
-    display: flex;
-    gap: 10px;
-}
-.square__blue {
-  display: block;
-  width: 20px;
-  height: 20px;
-  background-color: var(--headerFoter);
-}

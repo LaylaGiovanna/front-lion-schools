@@ -1,0 +1,89 @@
+.menu {
+  display: flex;
+  height: 50px;
+  background-color: var(--menuHeader);
+  align-items: center;
+  justify-content: space-around;
+}
+
+.menu-left {
+  display: flex;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+}
+
+/* menu - STATUS */
+.select__status{
+  display: flex;
+  align-items: center;
+  justify-self: center;
+}
+
+select {
+  display: flex;
+  font-size: 16px;
+  align-items: center;
+  background-color: unset;
+  color: var(--headerFoter);
+  border: none;
+  outline: none;
+  overflow: hidden;
+  appearance: none;
+  padding: .7rem 1rem 1rem 1rem;
+}
+
+option {
+  background-color: var(--headerFoter);
+  color: var(--backgorundColor);
+}
+
+/* menu - YEAR */
+.menu-year {
+  display: flex;
+  height: 30px;
+  background-color: var(--menuHeader);
+  justify-content: center;
+  align-items: center;
+}
+
+/* menu RIGHT */
+.menu-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: var(--headerFoter);
+  font-size: 16px;
+  width: 20%;
+}
+.subtitle__menu {
+  width: 28%;
+  display: flex;
+  justify-content: end;
+}
+.div__cursando {
+  display: flex;
+  gap: 10px;
+}
+
+.square__yellow {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: var(--menuHeaderSubtitle);
+}
+
+.subtitle__menu {
+  text-transform: uppercase;
+}
+.div__finalizado {
+  display: flex;
+  gap: 10px;
+}
+.square__blue {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: var(--headerFoter);
+}

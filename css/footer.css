@@ -1,16 +1,16 @@
 /* ///////////////////////////////////////////////// */
 
 .footer_content{
-    width: 100vw;
-    height: 10.6vh;
-    background-color: var(--headerFoter);
-    color: var(--backgorundColor);
+    width: auto;
+    height: 100%;
+    padding: 2vw;
+    font-size: 1.3rem;
     font-weight: 600;
+    color: var(--backgorundColor);
+    background-color: var(--headerFoter);
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 2vw;
-    font-size: 1.3rem;
 }
 
 .footer_content_left{

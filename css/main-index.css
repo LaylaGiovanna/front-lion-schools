@@ -58,9 +58,13 @@ main {
   grid-area: direita;
   /* padding-left: 200px; */
   padding: 20px;
+  gap: 40px;
+  font-size: 64px;
 }
 
-.cards {
+
+/* BUTTONS ANTIGOS */
+/* .cards {
   display: grid;
   gap: 40px;
   font-size: 64px;
@@ -74,8 +78,9 @@ main {
   height: 200px;
   width: 400px;
   background-color: var(--headerFoter);
-  box-shadow: 12px 12px #3348b03f;
+  box-shadow: 20px 12px 12px #3348b03f;
   gap: 20px;
+  font-size: 70px;
 }
 
 .card-ds::before {
@@ -91,5 +96,59 @@ main {
   height: 200px;
   width: 400px;
   background-color: var(--headerFoter);
-  box-shadow: 12px 12px #3348b03f;
+  box-shadow: 20px 12px 12px #3348b03f;
+  gap: 20px;
+  font-size: 70px;
 }
+
+.card-redes::before {
+  content: url(../img/networks.png);
+  font-size: 70px;
+} */
+
+.button_ds{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  width: 400px;
+  background-color: var(--headerFoter);
+  box-shadow: 20px 12px 12px #3348b03f;
+  gap: 20px;
+  font-size: 70px;
+  color: var(--backgorundColor);
+  border: none;
+  border-radius: 8px;
+}
+.content_ds{
+  color: var(--backgorundColor);
+  font-size: 70px;
+}
+
+.button_ds::before {
+  content: "</> ";
+  font-size: 70px;
+  font-weight: bold;
+}
+
+.button_redes{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  width: 400px;
+  background-color: var(--headerFoter);
+  box-shadow: 20px 12px 12px #3348b03f;
+  gap: 20px;
+  font-size: 70px;
+  border: none;
+  border-radius: 8px;
+}
+.content_redes{
+
+}
+
+.button_redes::before {
+  content: url(../img/networks.png);
+  font-size: 70px;
+} 

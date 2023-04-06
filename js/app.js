@@ -1,6 +1,6 @@
 'use stric'
 
-//alert("js works")
+
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //Creater Header
@@ -56,6 +56,27 @@ adicionar.addEventListener('click', adicionarCard)
 
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
+/* Create buttons */
+    let buttonDs = document.createElement('button')
+    buttonDs.className = 'button_ds'
+
+    container_right.appendChild(buttonDs)
+    
+    let ds = "ds"
+    ds.className = 'content_ds' 
+
+    let buttonRedes = document.createElement('button')
+    buttonRedes.className = 'button_redes'
+    // let redes = 'redes'
+    // ds.className = 'content_redes' 
+    container_right.appendChild(buttonRedes)
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
 //creates footer
 
 const createFooter = function(){
@@ -75,7 +96,7 @@ const createFooter = function(){
     /* div for contacts */
     /* let listContacts = document.createElement("div");
     listContacts.className = "list"
-    listContacts.appendChild(contentFooterLeft) 
+    listContacts.appendChild(contentFooterLeft)
  */
     //the center
     let contentFooterCenter = document.createElement("div");
@@ -87,7 +108,7 @@ const createFooter = function(){
     let contentFooterRight = document.createElement("div");
     contentFooterRight.textContent = "Copyright © 2022 | Layla Giovanna | A. Beatriz Landi"
     contentFooterRight.className = "footer_content_rigth"
-    footer_content.appendChild(contentFooterRight)  
+    footer_content.appendChild(contentFooterRight)
     
 }
 // createFooter()

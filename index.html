@@ -9,17 +9,18 @@
     <!-- Links -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="shortcut icon" href="../img/icon-lion.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../css/header.css">
-    <link rel="stylesheet" href="../css/footer.css">
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/students.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./ico/lion.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/main-index.css">
 
     <!-- Scripts -->
     <script src="../js/app.js" defer></script>
     <script src="https://kit.fontawesome.com/98589b12b7.js" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="./js/api.js"></script>
 
 
 
@@ -54,59 +55,65 @@
             </div>
         </div>
 
-        <div class="container-right">
-            <div class="cards">
-                <div class="card-ds">
+        <div class="container-right" id="container_right">
+           <!-- <div class="cards">
+                 <div class="card-ds">
                     <p>ds</p>
                 </div>
 
                 <div class="card-redes">
                     <p>redes</p>
-                </div>
-            </div>
+                </div> 
+            </div>-->
         </div>
     </main>
 
     <footer>
         <div class="contact ">
-            <div class="content-contact ">
-                <ion-icon class="phone" name="call-outline"></ion-icon>
-                <p class="text ">(11) 4774-4700</p>
-            </div>
-
-            <div class="content-contact ">
-                <i class="fa-solid fa-envelope " id="simbol "></i>
-                <p class="text ">lionschool@gmail.com</p>
-            </div>
-
-            <div class="content-contact ">
-                <i class="fa-solid fa-location-dot " id="simbol "></i>
-                <p class="text ">Rua tcc, 211, Centro, Jandira</p>
-            </div>
+          <div class="content-contact">
+            <a href="#">
+              <img src="../img/phone-call.png" alt="Image phone icon">
+            </a>
+            <p class="text ">(11) 4774-4700</p>
+          </div>
+    
+          <div class="content-contact">
+            <a href="#">
+              <img src="../img/email.png" alt="Image email icon">
+            </a>
+            <p class="text ">lionschool@gmail.com</p>
+          </div>
+    
+          <div class="content-contact">
+            <a href="#">
+              <img src="../img/location.png" alt="Image location icon">
+            </a>
+            <p class="text ">Rua tcc, 211, Centro, Jandira</p>
+          </div>
         </div>
-
+    
         <div class="copyright ">
-            <p class="text-copyright "> Copyright © 2022 | Layla Giovanna | A. Beatriz Landi </p>
+          <p class="text-copyright "> Copyright © 2022 | Layla Giovanna | A. Beatriz Landi </p>
         </div>
-
+    
         <div class="social ">
-            <div class="ellipse ">
-                <i class="fa-brands fa-youtube " id="icon-social "></i>
-            </div>
-
-            <div class="ellipse ">
-                <i class="fa-brands fa-twitter " id="icon-social "></i>
-            </div>
-
-            <div class="ellipse ">
-                <i class="fa-brands fa-instagram " id="icon-social "></i>
-            </div>
-
-            <div class="ellipse ">
-                <i class="fa-brands fa-facebook " id="icon-social "></i>
-            </div>
+          <div class="ellipse ">
+            <ion-icon name="logo-youtube"></ion-icon>
+          </div>
+    
+          <div class="ellipse ">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </div>
+    
+          <div class="ellipse ">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </div>
+    
+          <div class="ellipse ">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </div>
         </div>
-    </footer>
+      </footer>
 
 
 </body>

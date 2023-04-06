@@ -53,14 +53,20 @@ footer {
 
 .contact {
     display: grid;
-    color: white;
+    color: var(--backgorundColor);
     font-size: 25px;
+    /* height: max-content; */
+    gap: 10px;
 }
 
 .content-contact {
     display: flex;
     align-items: center;
     justify-content: left;
+    gap: 12px;
+}
+.content-contact img{
+    width: 26px;
 }
 
 .text {
@@ -74,14 +80,14 @@ footer {
 }
 
 .copyright {
-    color: white;
+    color: var(--backgorundColor);
     font-size: 16px;
     display: flex;
     align-items: center;
 }
 
 .social {
-    color: white;
+    color: var(--backgorundColor);
     font-size: 30px;
     display: flex;
     align-items: center;
@@ -92,9 +98,14 @@ footer {
     width: 48px;
     height: 48px;
     border-radius: 50%;
-    border: whitesmoke;
+    border: var(--backgorundColor);
     align-items: center;
     justify-content: center;
     display: flex;
     border-style: solid;
+}
+
+.icons{
+    width: 30px;
+    background-color: peru;
 }

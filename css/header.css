@@ -1,7 +1,7 @@
 /* ///////////////////////////////////////////////// */
 .heather_content {
     width: auto;
-    height: 5rem;
+    max-height: 10vh;
     background-color: var(--headerFoter);
     color: var(--backgorundColor);
     font-weight: 700;
@@ -13,7 +13,7 @@
 }
 
 .heather_content img {
-    width: 10vh;
+    max-width: 10vh;
 }
 
 #left_header {

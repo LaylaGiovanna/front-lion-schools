@@ -1,0 +1,93 @@
+main {
+  display: grid;
+  justify-content: center;
+  height: auto;
+}
+
+.title-course {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: blueviolet; */
+}
+.title-course h1 {
+  font-size: 60px;
+  color: var(--headerFoter);
+  /* background-color: tomato; */
+}
+
+/* .container {
+  display: grid;
+  width: 81.25rem;
+  background-color: aqua;
+  justify-content: center;
+  padding: 30px;
+}
+
+#card {
+  height: 18.75rem;
+  max-width: 200px;
+  top: 0;
+  border-radius: 5px;
+  background-color: tomato;
+}
+
+
+.card{
+  display: grid;
+  text-align: center;
+
+}
+.img__profile  {
+  background-color: hotpink;
+}
+.img__profile img {
+  background-color: hotpink;
+  height: 200px;
+  width: 200px;
+}
+
+
+.name__profile p {
+  max-width: 200px;
+  
+} */
+
+
+/* cards */
+.container-cards {
+  /* display: flex;
+  width: 100%; */
+  /* height: 550px; */
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  overflow: auto;
+  justify-content: center;
+  width: 81.25rem;
+}
+
+.card {
+  width: 200px;
+  height: 300px;
+  background-color: var(--headerFoter);
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.name__profile{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: var(--backgorundColor);
+  padding-top: 10px;
+}
+
+.img__profile img {
+  height: 200px;
+  width: 200px;
+}

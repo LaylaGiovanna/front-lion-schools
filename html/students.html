@@ -1,117 +1,289 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Links -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="shortcut icon" href="../img/icon-lion.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/students.css" />
-    <link rel="stylesheet" href="../css/header.css" />
-    <link rel="stylesheet" href="../css/footer.css" />
-    <link rel="stylesheet" href="../css/menu-students.css">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Scripts -->
-    <script src="../js/app.js" defer></script>
-    <script src="../js/students.js"></script>
+  <!-- Links -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,700&display=swap"
+    rel="stylesheet" />
+  <link rel="shortcut icon" href="../img/icon-lion.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/main-students.css" />
+  <link rel="stylesheet" href="../css/header.css" />
+  <link rel="stylesheet" href="../css/footer.css" />
+  <link rel="stylesheet" href="../css/menu-students.css">
 
-    <title>Lion Schools - Turma</title>
-  </head>
+  <!-- Scripts -->
+  <script src="../js/app.js" defer></script>
+  <script src="../js/students.js"></script>
+  <script src="https://kit.fontawesome.com/98589b12b7.js" crossorigin="anonymous"></script>
 
-  <body>
-    <div class="content" id="content"></div>
+  <title>Lion Schools - Turma</title>
+</head>
 
-    <header id="header"></header>
+<body>
+  <!-- <div class="content" id="content"></div> -->
 
-    <div class="menu">
-      <div class="menu-left">
-        <!-- menu status -->
-        <div class="menu-header">
-          <select id="select__status" class="select__status">
-            <option value="status">Status</option>
-          </select>
-          <script>
-            let list__status = ["Cursando", "Finalizado"];
+  <header id="header"></header>
 
-            list__status.forEach(function (item) {
-              let list = document.createElement("option");
-              list.text = item;
-              list.value = item;
-              select__status.appendChild(list);
-            });
-          </script>
+  <div class="menu">
+    <div class="menu-left">
+      <!-- menu status -->
+      <div class="menu-header">
+        <select id="select__status" class="select__status">
+          <option value="status">Status</option>
+        </select>
+        <script>
+          let list__status = ["Cursando", "Finalizado"];
 
-          
-        </div>
-        <!-- menu year -->
-        <div class="menu-year">
-          <select id="select__year">
-            <option value="year">Ano</option>
-          </select>
-          <script>
-            let list__year = [
-              "2018",
-              "2019",
-              "2020",
-              "2021",
-              "2022",
-              "2023",
-              "2024",
-            ];
+          list__status.forEach(function (item) {
+            let list = document.createElement("option");
+            list.text = item;
+            list.value = item;
+            select__status.appendChild(list);
+          });
+        </script>
 
-            list__year.forEach(function (item) {
-              let list = document.createElement("option");
-              list.text = item;
-              list.value = item;
-              select__year.appendChild(list);
-            });
-          </script>
-        </div>
+
       </div>
+      <!-- menu year -->
+      <div class="menu-year">
+        <select id="select__year">
+          <option value="year">Ano</option>
+        </select>
+        <script>
+          let list__year = [
+            "2018",
+            "2019",
+            "2020",
+            "2021",
+            "2022",
+            "2023",
+            "2024",
+          ];
 
-      <div class="menu-right">
-        <div class="subtitle__menu">
-          <p>Legenda</p>
-        </div>
-
-        <div class="div__cursando">
-          <div class="square__yellow"></div>
-          <p>Cursando</p>
-        </div>
-
-        <div class="div__finalizado">
-          <div class="square__blue"></div>
-          <p>Finalizado</p>
-        </div>
+          list__year.forEach(function (item) {
+            let list = document.createElement("option");
+            list.text = item;
+            list.value = item;
+            select__year.appendChild(list);
+          });
+        </script>
       </div>
     </div>
 
-    <main>
-      <div class="title-course">
-        <h1>Desenvolvimento de sistemas</h1>
+    <div class="menu-right">
+      <div class="subtitle__menu">
+        <p>Legenda</p>
       </div>
 
-      <div class="container" id="container">
-        <div class="card" id="card">
-          <div class="img__profile">
-            <img src="../img/aluno.png" alt="">
-          </div>
-          <div class="name__profile">
-            <p>HÉLIDA BENTO DE OLIVEIRA LINSsssssssssssssssssssssssssssssssss</p>
-          </div>
+      <div class="div__cursando">
+        <div class="square__yellow"></div>
+        <p>Cursando</p>
+      </div>
+
+      <div class="div__finalizado">
+        <div class="square__blue"></div>
+        <p>Finalizado</p>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <div class="title-course">
+      <h1>Desenvolvimento de sistemas</h1>
+    </div>
+
+    <div class="container-cards">
+      <div class="card">
+        <div class="img__profile">
+          <img src="../img/aluno.png" alt="">
+        </div>
+        <div class="name__profile">
+          <span class="name">HÉLIDA BENTO DE OLIVEIRA LINS</span>
         </div>
       </div>
 
+      <div class="card">
+        <div class="img__profile">
+          <img src="../img/aluno.png" alt="">
+        </div>
+        <div class="name__profile">
+          <span class="name">HÉLIDA BENTO DE OLIVEIRA LINS</span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="img__profile">
+          <img src="../img/aluno.png" alt="">
+        </div>
+        <div class="name__profile">
+          <span class="name">HÉLIDA BENTO DE OLIVEIRA LINS</span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="img__profile">
+          <img src="../img/aluno.png" alt="">
+        </div>
+        <div class="name__profile">
+          <span class="name">HÉLIDA BENTO DE OLIVEIRA LINS</span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="img__profile">
+          <img src="../img/aluno.png" alt="">
+        </div>
+        <div class="name__profile">
+          <span class="name">HÉLIDA BENTO DE OLIVEIRA LINS</span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="img__profile">
+          <img src="../img/aluno.png" alt="">
+        </div>
+        <div class="name__profile">
+          <span class="name">HÉLIDA BENTO DE OLIVEIRA LINS</span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="img__profile">
+          <img src="../img/aluno.png" alt="">
+        </div>
+        <div class="name__profile">
+          <span class="name">HÉLIDA BENTO DE OLIVEIRA LINS</span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="img__profile">
+          <img src="../img/aluno.png" alt="">
+        </div>
+        <div class="name__profile">
+          <span class="name">HÉLIDA BENTO DE OLIVEIRA LINS</span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="img__profile">
+          <img src="../img/aluno.png" alt="">
+        </div>
+        <div class="name__profile">
+          <span class="name">HÉLIDA BENTO DE OLIVEIRA LINS</span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="img__profile">
+          <img src="../img/aluno.png" alt="">
+        </div>
+        <div class="name__profile">
+          <span class="name">HÉLIDA BENTO DE OLIVEIRA LINS</span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="img__profile">
+          <img src="../img/aluno.png" alt="">
+        </div>
+        <div class="name__profile">
+          <span class="name">HÉLIDA BENTO DE OLIVEIRA LINS</span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="img__profile">
+          <img src="../img/aluno.png" alt="">
+        </div>
+        <div class="name__profile">
+          <span class="name">HÉLIDA BENTO DE OLIVEIRA LINS</span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="img__profile">
+          <img src="../img/aluno.png" alt="">
+        </div>
+        <div class="name__profile">
+          <span class="name">HÉLIDA BENTO DE OLIVEIRA LINS</span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="img__profile">
+          <img src="../img/aluno.png" alt="">
+        </div>
+        <div class="name__profile">
+          <span class="name">HÉLIDA BENTO DE OLIVEIRA LINS</span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="img__profile">
+          <img src="../img/aluno.png" alt="">
+        </div>
+        <div class="name__profile">
+          <span class="name">HÉLIDA BENTO DE OLIVEIRA LINS</span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="img__profile">
+          <img src="../img/aluno.png" alt="">
+        </div>
+        <div class="name__profile">
+          <span class="name">HÉLIDA BENTO DE OLIVEIRA LINS</span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="img__profile">
+          <img src="../img/aluno.png" alt="">
+        </div>
+        <div class="name__profile">
+          <span class="name">HÉLIDA BENTO DE OLIVEIRA LINS</span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="img__profile">
+          <img src="../img/aluno.png" alt="">
+        </div>
+        <div class="name__profile">
+          <span class="name">HÉLIDA BENTO DE OLIVEIRA LINS</span>
+        </div>
+      </div>
 
-    </main>
-    
+  </main>
 
-    <!-- <footer id="footer"></footer> -->
-  </body>
+  <footer>
+    <div class="contact ">
+      <div class="content-contact ">
+        <p class="text ">(11) 4774-4700</p>
+      </div>
+
+      <div class="content-contact ">
+        <p class="text ">lionschool@gmail.com</p>
+      </div>
+
+      <div class="content-contact ">
+        <p class="text ">Rua tcc, 211, Centro, Jandira</p>
+      </div>
+    </div>
+
+    <div class="copyright ">
+      <p class="text-copyright "> Copyright © 2022 | Layla Giovanna | A. Beatriz Landi </p>
+    </div>
+
+    <div class="social ">
+      <div class="ellipse ">
+        <i class="fa-brands fa-youtube " id="icon-social "></i>
+      </div>
+
+      <div class="ellipse ">
+        <i class="fa-brands fa-twitter " id="icon-social "></i>
+      </div>
+
+      <div class="ellipse ">
+        <i class="fa-brands fa-instagram " id="icon-social "></i>
+      </div>
+
+      <div class="ellipse ">
+        <i class="fa-brands fa-facebook " id="icon-social "></i>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
 </html>

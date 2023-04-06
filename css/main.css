@@ -1,23 +1,19 @@
 main {
   display: grid;
   height: auto;
-  grid-template-areas: 
-  "left right";
+  grid-template-areas: "esquerda direita";
   gap: 50px;
-  justify-content: space-between;
-  background-color: plum;
+  justify-content: space-around;
 }
-
 
 /* left */
 .container-left {
   display: flex;
-  justify-content: left;
+  justify-content: center;
   width: fit-content;
-  /* padding: 30px 30px; */
   height: auto;
-  background-color: tomato;
-  grid-area: left;
+  grid-area: esquerda;
+  padding: 20px;
 }
 
 .login-content {
@@ -57,8 +53,43 @@ main {
 }
 
 /* right */
-.container-right{
+.container-right {
   display: grid;
-  grid-area: right;
-  background-color: rgb(189, 5, 97);
+  grid-area: direita;
+  /* padding-left: 200px; */
+  padding: 20px;
+}
+
+.cards {
+  display: grid;
+  gap: 40px;
+  font-size: 64px;
+  color: var(--backgorundColor);
+}
+
+.card-ds {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  width: 400px;
+  background-color: var(--headerFoter);
+  box-shadow: 12px 12px #3348b03f;
+  gap: 20px;
+}
+
+.card-ds::before {
+  content: "</> ";
+  font-size: 70px;
+  font-weight: bold;
+}
+
+.card-redes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  width: 400px;
+  background-color: var(--headerFoter);
+  box-shadow: 12px 12px #3348b03f;
 }

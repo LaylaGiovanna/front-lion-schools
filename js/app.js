@@ -83,11 +83,11 @@ const createFooter = function(){
     contentFooterCenter.className = "footer_content_center"
     footer_content.appendChild(contentFooterCenter) 
 
-    //the rigth
+     //the rigth
     let contentFooterRight = document.createElement("div");
     contentFooterRight.textContent = "Copyright © 2022 | Layla Giovanna | A. Beatriz Landi"
     contentFooterRight.className = "footer_content_rigth"
-    footer_content.appendChild(contentFooterRight) 
+    footer_content.appendChild(contentFooterRight)  
     
 }
-createFooter()
+// createFooter()

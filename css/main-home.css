@@ -1,0 +1,204 @@
+main {
+  display: grid;
+  height: auto;
+  grid-template-areas: "esquerda direita";
+  gap: 50px;
+  justify-content: space-around;
+}
+
+/* left */
+.container-left {
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+  height: auto;
+  grid-area: esquerda;
+  padding: 20px;
+}
+
+.login-content {
+  display: grid;
+  gap: 10px;
+  flex-wrap: wrap;
+  grid-template-areas:
+    "title img"
+    "devices img";
+}
+
+.devices {
+  display: grid;
+  gap: 80px;
+  grid-area: devices;
+}
+
+.title-login {
+  font-size: 28px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  grid-area: title;
+}
+
+.title-login h1 {
+  font-weight: 300;
+}
+
+.title-login span {
+  color: var(--headerFoter);
+  font-weight: 800;
+}
+
+.img-student-login {
+  grid-area: img;
+}
+
+/* right */
+.container-right {
+  display: grid;
+  grid-area: direita;
+  /* padding-left: 200px; */
+  padding: 20px;
+  gap: 40px;
+  font-size: 64px;
+}
+
+.button_ds {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  width: 400px;
+  background-color: var(--headerFoter);
+  box-shadow: 20px 12px 12px #3348b03f;
+  gap: 20px;
+  font-size: 50px;
+  color: var(--backgorundColor);
+  border: none;
+  border-radius: 8px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.content_ds {
+  color: var(--backgorundColor);
+  font-size: 70px;
+}
+
+.button_ds::before {
+  content: "</> ";
+  font-size: 70px;
+  font-weight: bold;
+  color: var(--backgorundColor);
+}
+
+.button_redes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  width: 400px;
+  background-color: var(--headerFoter);
+  box-shadow: 20px 12px 12px #3348b03f;
+  gap: 20px;
+  font-size: 50px;
+  color: var(--backgorundColor);
+  border: none;
+  border-radius: 8px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.button_redes::before {
+  content: "";
+  background-image: url(../img/networks.png) ;
+  background-size: 96px 93px ;
+  font-size: 70px;
+}
+
+/* MOBILE */
+@media (max-width: 640px) {
+  .container-left {
+    padding: 10px;
+  }
+
+  .login-content {
+    display: grid;
+    gap: 10px;
+    /* flex-wrap: wrap; */
+    grid-template-areas:
+      "title title"
+      "devices img";
+  }
+
+  .devices {
+    grid-area: devices;
+    align-items: flex-end;
+  }
+  .devices img {
+    max-width: 180px;
+  }
+  .title-login {
+    font-size: 18px;
+    grid-area: title;
+  }
+
+  .img-student-login {
+    display: grid;
+    align-items: flex-end;
+    grid-area: img;
+  }
+  .img-student-login img {
+    max-width: 100px;
+    max-height: 166px;
+  }
+
+
+  main {
+    display: grid;
+    height: auto;
+    grid-template-areas: 
+    "esquerda" 
+    "direita";
+    gap: 50px;
+    justify-content: space-around;
+  }
+
+  /* RIGHT */
+  .container-right {
+    background-color: hotpink;
+    justify-content: center;
+  }
+  
+  .button_ds {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 230px;
+    height: 115px;
+    font-size: 36px;
+  }
+  
+  .button_ds::before {
+    content: "</> ";
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--backgorundColor);
+  }
+  
+  .button_redes {
+    width: 230px;
+    height: 115px;
+    font-size: 36px;
+    gap: 10px;
+  }
+  .button_redes::before {
+    /* background: url(../img/networks.png); */
+    background-size: 38px 30px ;
+    width: 38px;
+    height: 30px;
+    background-color: purple;
+  }
+  #escrita_redes{
+    font-size: 30px;
+  }
+
+}

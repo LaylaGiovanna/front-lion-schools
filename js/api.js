@@ -1,13 +1,20 @@
 'use strict'
 
 
- const pesquisarCepPost = function()/* async() => */ {
-    const url = `http://localhost:8080/v1/lion-school/cursos`
+function fetchApiData(){
 
-    const response = fetch(url)
-    const dados =  response.json()
+    fetch('http://localhost:8080/v1/lion-school/cursos')
+    .then((response) =>  response.json())
+    .then( data =>{
+        const list = document.querySelector('#fill_list')
 
-    return {
-        sigla: dados.sigla
-    }
+        data.map((item)=>{
+            const li = document.createElement('button')
+
+            console.log(item.sigla)
+            li.setAttribute('id', item)
+            li.innerHTML = item.sigla
+            list.appendChild(li)
+        })
+    })
 }

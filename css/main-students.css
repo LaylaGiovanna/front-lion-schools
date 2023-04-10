@@ -49,3 +49,32 @@ main {
   height: 200px;
   width: 200px;
 }
+
+html{
+  scroll-behavior: smooth;
+}
+
+#link-topo {
+  display: flex;
+  right: 50px;
+  bottom: 60px;
+  font-size: 26px;
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-decoration: none;
+  color: var(--headerFoter);
+  background-color: var(--menuHeader);
+  box-shadow: 3px 3px 10px #333;
+  position: fixed;
+  user-select: none;
+  transition: all 1s ease;
+  place-content: center;
+  align-items: center;
+}
+
+#link-topo:hover {
+  background-color: var(--menuHeaderSubtitle);
+}
+

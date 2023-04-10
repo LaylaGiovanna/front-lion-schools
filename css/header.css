@@ -43,6 +43,25 @@
 
 @media (max-width: 640px) {
     .heather_content {
-        max-height: 3.5rem;
+        min-height: 3.5rem;
+        min-width: auto;
+        padding: 30px;
+        font-size: 1.2rem;
+    }
+
+    .heather_content img {
+        min-width: 6vh;
+    }
+
+    #rigth_header {
+        width: 80px;
+        height: 20px;
+        gap: 9px;
+        padding: 30px;
+    }
+    #button_header {
+        min-width: 36px;
+        max-height: 36px;
+        justify-self: center;
     }
 }

@@ -50,7 +50,7 @@ main {
   width: 200px;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -78,3 +78,49 @@ html{
   background-color: var(--menuHeaderSubtitle);
 }
 
+@media (max-width: 640px) {
+  main {
+    display: grid;
+    justify-content: center;
+    height: auto;
+  }
+
+  .title-course {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .title-course h1 {
+    margin: 10px;
+    font-size: 32px;
+    max-width: 250px;
+  }
+
+  /* cards */
+  .container-cards {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: auto;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    width: auto;
+    padding: 30px;
+  }
+
+  .card {
+    display: grid;
+    width: 200px;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--headerFoter);
+  }
+
+  #link-topo {
+    display: flex;
+    right: 10px;
+    bottom: 30px;
+  }
+}

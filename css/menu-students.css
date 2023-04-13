@@ -15,7 +15,7 @@
 }
 
 /* menu - STATUS */
-.select__status{
+.select__status {
   display: flex;
   align-items: center;
   justify-self: center;
@@ -31,7 +31,7 @@ select {
   outline: none;
   overflow: hidden;
   appearance: none;
-  padding: .7rem 1rem 1rem 1rem;
+  padding: 0.7rem 1rem 1rem 1rem;
 }
 
 option {
@@ -61,6 +61,7 @@ option {
   width: 28%;
   display: flex;
   justify-content: end;
+  font-weight: 500;
 }
 .div__cursando {
   display: flex;
@@ -86,4 +87,49 @@ option {
   width: 20px;
   height: 20px;
   background-color: var(--headerFoter);
+}
+
+@media (max-width: 640px) {
+  .menu {
+    display: flex;
+    height: fit-content;
+    align-items: start;
+    justify-content: space-around;
+  }
+
+  .menu-left {
+    display: grid;
+    height: auto;
+    align-items: normal;
+    width: fit-content;
+  }
+
+  /* menu - STATUS */
+  .select__status {
+    display: flex;
+    align-items: flex-start;
+    justify-self: center;
+    background-color: transparent;
+  }
+
+  /* menu - YEAR */
+  .menu-year {
+    display: grid;
+    width: fit-content;
+    height: auto;
+    background-color: transparent;
+  }
+
+  /* menu RIGHT */
+  .menu-right {
+    display: grid;
+    align-items: flex-start;
+    justify-content: left;
+    gap: 10px;
+  }
+  .subtitle__menu {
+    width: auto;
+    display: flex;
+    justify-content: start;
+  }
 }

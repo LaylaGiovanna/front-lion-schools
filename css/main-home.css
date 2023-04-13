@@ -108,8 +108,8 @@ main {
 }
 
 .button_redes::before {
-  content: "";
-  background-image: url(../img/networks.png) ;
+  content:  url(../img/networks.png);
+  /* background: url(../img/networks.png); */
   background-size: 96px 93px ;
   font-size: 70px;
 }
@@ -161,12 +161,6 @@ main {
     gap: 50px;
     justify-content: space-around;
   }
-
-  /* RIGHT */
-  .container-right {
-    background-color: hotpink;
-    justify-content: center;
-  }
   
   .button_ds {
     display: flex;
@@ -191,11 +185,12 @@ main {
     gap: 10px;
   }
   .button_redes::before {
-    /* background: url(../img/networks.png); */
-    background-size: 38px 30px ;
-    width: 38px;
-    height: 30px;
-    background-color: purple;
+    content: "";
+    background: url(../img/networks.png);
+    background-repeat: no-repeat;
+    background-size: 48px 40px;
+    width: 52px;
+    height: 38px;
   }
   #escrita_redes{
     font-size: 30px;
